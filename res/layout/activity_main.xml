@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.item.jiejie.view.MyScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:background="@drawable/ic_beagtu_two"
+                android:contentDescription="@null" />
+			<FrameLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent">
+			    
+            <com.item.jiejie.view.MyListView
+                android:id="@+id/mylistview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="我是头布局"
+                android:textColor="@color/action_bar_back"
+                android:padding="15dp"/>
+			</FrameLayout>
+        </LinearLayout>
+    </com.item.jiejie.view.MyScrollView>
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_bg" >
+
+        <include layout="@layout/title_layout" />
+    </LinearLayout>
+
+</RelativeLayout>
