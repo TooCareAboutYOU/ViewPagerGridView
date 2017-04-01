@@ -1,0 +1,2 @@
+仿QQ空间头部渐变
+ViewPager+GridView
